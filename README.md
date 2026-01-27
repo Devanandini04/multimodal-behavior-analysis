@@ -45,17 +45,6 @@ The system produces one of the following outputs:
   - speech category  
 
 ---
-
-## 🗂️ Project Structure
-
-```text
-src/
-│
-├── model/        # Deep learning models for gesture and speech processing
-├── workflow/     # Main pipeline for integrating models and overlaying outputs
-├── Models/       # Pre-trained and fine-tuned models
-
----
 ## Dataset
 
 To ensure ethical compliance and reproducibility, this repository does **not**
@@ -63,3 +52,17 @@ include any video files, annotations, or extracted pose data.
 
 The focus of this project is on reproducing the **data processing, annotation alignment,
 and modeling pipeline**, which can be applied to any compatible dataset.
+
+
+## 🗂️ Project Structure
+
+```text
+src/
+│
+├── data/              # Dataset processing and annotation alignment utilities
+├── model/             # Deep learning models for gesture and speech processing
+├── workflow/          # End-to-end pipeline for integrating models and generating outputs
+├── Pose_Estimation/   # Pose extraction and keypoint generation modules
+├── Segmentation/      # Shot and speaker segmentation utilities
+├── Utils/             # Helper functions and shared utilities
+├── config.py          # Centralized configuration for dataset and training parameters
