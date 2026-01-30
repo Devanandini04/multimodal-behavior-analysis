@@ -25,14 +25,13 @@ Models/
 *.pth
 
 # ===============================
-# Data
+# Dataset / Generated Data (NOT CODE)
 # ===============================
-# Dataset files (but not code)
-*.csv
-*.npy
-*.npz
-*.json
-*.eaf
+data/**/*.csv
+data/**/*.npy
+data/**/*.npz
+data/**/*.eaf
+
 # ===============================
 # OS Files
 # ===============================
